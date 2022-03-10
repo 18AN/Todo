@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(129, 124, 124);
+}
+
+#root{
+    min-width: fit-content;
+    max-width: 500px;
+    min-height: fit-content;
+    padding: 10px 30px 50px 30px ;
+    margin: 0 auto; 
+    transform: translateY(100px);
+    background-color: rgb(128, 128, 128);
+    border: 3px solid rgb(48, 46, 54);
+    border-radius: 20px; 
+}
+
+//HEADER
+
+.todo-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+//MAIN
+
+.todo-main{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+//CARD
+
+.todo-card{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(48, 46, 54);
+    border-radius: 10px;  
+}
+
+.button, .input{
+    border: 3px solid rgb(48, 46, 54);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.button{
+    width: 25%;
+    height: 40px;
+    background-color: rgb(134, 199, 212);
+}
+
+.input{
+    width: 40%;
+    text-align: center;
+    color: rgb(129, 124, 124);
+}
+
+.todo-text{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.x-button{
+    position: absolute;
+    left: 86.5%;
+    align-self: flex-start;
+    width: 10%;
+    height: 25px;
+    border: 3px solid rgb(48, 46, 54);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(134, 199, 212);
+}
+
+.article-date{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+//DARK THEME:
+
+.dark{
+    background-color:rgb(48, 46, 54);
+}
+.line-through{
+    text-decoration: line-through;
+}
